@@ -1,0 +1,58 @@
+{
+    "dataset_name": [
+        "CocoDet_Animals_20230417_from_pano_for_neg"
+    ],
+    "dataset_path": [
+        "/media/3_sdc/datasets/Insta360Det/CocoDet_Animals_20230417_from_pano_for_neg"
+    ],
+    "publishing_group": [
+        "AI_Group_1"
+    ],
+    "dataset_owner": [
+        "林晓帆"
+    ],
+    "task_categories": [
+        "Computer Vision"
+    ],
+    "subtask_categories": [
+        "Object Detection"
+    ],
+    "search_keywords": [
+        "animals"
+    ],
+    "data_type": [
+        "Panoramic Image"
+    ],
+    "annotation_type": [
+        "BBox"
+    ],
+    "annotation_format": [
+        "COCO"
+    ],
+    "dataset_source": {
+        "Public Dataset": 0,
+        "Insta360 Product Shooting": 100,
+        "WebCrawler": 0,
+        "Insta360 Simulation Dataset": 0,
+        "other": 0,
+        "unknown": 0
+    },
+    "labeling_party": {
+        "Publicly-available": 0,
+        "Purchased": 0,
+        "Auto-labeled": 0,
+        "Annotated-by-R&D": 100,
+        "Simulationed": 0,
+        "other": 0,
+        "unknown": 0
+    },
+    "shooting_device": [
+        "ONER"
+    ],
+    "support_product_lines": [
+        "Ace(IAC1)",
+        "AcePro(IAC2)",
+        "X4(DLC4)",
+        "GO3S(TC2)"
+    ]
+}
