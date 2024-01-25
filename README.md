@@ -14,7 +14,6 @@
 
 
 ## 新增分类需求
-![Alt text](image.png)
 运行命令如下：
 python CommonTaskClassification/create_CommonTaskClassification_json.py
 python CommonTaskClassification/create_CommonTaskClassification_readme.py
