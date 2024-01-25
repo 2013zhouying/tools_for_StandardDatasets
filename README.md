@@ -6,16 +6,16 @@
 自动生成正方形封面图：python create_cover_image.py
 
 
-# 下载数据接入文档信息汇总表.xlsx文件
+## 下载数据接入文档信息汇总表.xlsx文件
 在线表格网址：https://arashivision.feishu.cn/wiki/UFS3wHaSciaK6ckFZZAcbE89n3b， 注意：下载为.xlsx格式
 
 自动生成README.md文件命令：python create_readme.py
 
 
 
-# 新增分类需求
+## 新增分类需求
 ![Alt text](image.png)
-## 运行命令
+运行命令如下：
 python CommonTaskClassification/create_CommonTaskClassification_json.py
 python CommonTaskClassification/create_CommonTaskClassification_readme.py
 
