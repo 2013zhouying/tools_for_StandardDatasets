@@ -64,26 +64,6 @@ sheet = wb.active
 # 获取工作表
 sheet_link = wb['Sheet1']
 
-# # 获取某个单元格
-# cell = sheet_link['A3'] 
-
-# # 检查单元格是否有超链接
-# if cell.hyperlink:
-#     print("这个单元格有超链接:", cell.hyperlink.target)
-# else:
-#     print("这个单元格没有超链接")
-
-# # 提取表头
-# headers = []
-# for row in sheet.iter_rows(min_row=1, max_row=2, values_only=True):
-#     print(row)
-#     for header in row:
-#         headers.append(header)
-
-# # 判断最大列数
-# max_column = sheet.max_column
-# #print(max_column)
-
 # 提取数据并建立Markdown文件
 dataset_name = ['begin']
 row_data = []
@@ -93,14 +73,6 @@ dataset_roor_list = []
 j = 0
 for row_index, row in enumerate(sheet.iter_rows(min_row=3, values_only=True), start=3):
     #print(row_index, row[4], row[5])
-    
-    # # 检查文件夹路径是否存在
-    # dataset_path = row[4]+ '/'+row[5]
-    # is_dir = os.path.isdir(dataset_path)
-    # if is_dir:
-    #     continue
-    # else:
-    #     print(f"{row_index, dataset_path,row[5], row[6]} 不存在,保存README.md失败")
 
     cell_num_str = 'A'+str(row_index)
     # cell = sheet_link['A3'] 
@@ -114,7 +86,7 @@ for row_index, row in enumerate(sheet.iter_rows(min_row=3, values_only=True), st
         md_content = f'[{text}]({link})  \n'
     else:
         print('单元格无超链接')
-    
+        md_content = ''
 
     if row[6]:
         # print(row_index, row)

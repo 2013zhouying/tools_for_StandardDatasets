@@ -92,8 +92,6 @@ with open(csv_file_path, mode='r', newline='', encoding='utf-8') as csvfile:
         for csv_field, json_field in dict_1.items():
             #print(csv_field, json_field)
             
-            # 使用dict_1中定义的映射填充output_dict
-            #print(row[csv_field])
             
             if row[csv_field].strip():
                 # 判定csv_field对应的template_dict_2中的值类型来进行处理

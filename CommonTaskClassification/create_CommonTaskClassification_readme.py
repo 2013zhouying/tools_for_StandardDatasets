@@ -4,8 +4,6 @@ import os
 import json
 
 
-
-
 # README.md文件
 # 在这里使用真实的数据替换占位符
 filled_template = """
@@ -69,8 +67,6 @@ template_dict_2 = {
 }
 
 
-
-
 # 读取Excel文件
 # 获取当前脚本的路径
 current_script_path = os.path.abspath(__file__)
@@ -102,13 +98,6 @@ for row_index, row in enumerate(sheet.iter_rows(min_row=3, values_only=True), st
             print(row_index,row[1],row[15])
             dataset_path = '/media/3_sdc/datasets/StandardDatasetTemplateFiles/CommonTaskClassification/'+row[15]+'/'+row[1]
             # print(row_index,row)
-            # if row[15] is not None and row[15] !='':
-            #     # 检查文件夹路径是否存
-            #     is_dir = os.path.isdir(dataset_path)
-            #     if is_dir:
-            #         continue
-            #     else:
-            #         os.mkdir(dataset_path)
 
             cell_num_str = 'A'+str(row_index)
             # cell = sheet_link['A3'] 
